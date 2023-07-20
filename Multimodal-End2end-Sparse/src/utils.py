@@ -63,22 +63,6 @@ def get_loss_weight(labels, label_order):
 def capitalize_first_letter(data):
     return [word.capitalize() for word in data]
 
-def cmumosei_round(a):
-    if a < -2:
-        res = -3
-    if -2 <= a and a < -1:
-        res = -2
-    if -1 <= a and a < 0:
-        res = -1
-    if 0 <= a and a <= 0:
-        res = 0
-    if 0 < a and a <= 1:
-        res = 1
-    if 1 < a and a <= 2:
-        res = 2
-    if a > 2:
-        res = 3
-    return res
 
 # From MTCNN
 def fixed_image_standardization(image_tensor: torch.tensor) -> torch.tensor:
