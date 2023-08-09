@@ -180,4 +180,5 @@ pickle.dump(all_metas, open(f'{output_path}/meta.pkl','wb'))
 
 !python /content/SparseConvNet/Multimodal-End2end-Sparse/main.py
 
-!python main.py -lr=5e-5 -ep=40 -mod=tav -bs=8 --img-interval=500 --early-stop=6 --loss=bce --cuda=3 --model=mme2e --num-emotions=6 --trans-dim=64 --trans-nlayers=4 --trans-nheads=4 --text-lr-factor=10 --text-model-size=base --text-max-len=100
+!python main.py -lr=5e-5 -ep=40 -mod=tav -bs=8 --img-interval=500 --datapath='/content/drive/MyDrive/sample folder preprocess' --dataset='iemocap' --optim='adam' --early-stop=6 --loss=bce --cuda=3 --model=mme2e --num-emotions=6 --trans-dim=64 --trans-nlayers=4 --trans-nheads=4 --text-lr-factor=10 --text-model-size=base --text-max-len=100
+--fusion='early' --hfc-sizes=[300, 144, 35] --audio-feautre-type=0
