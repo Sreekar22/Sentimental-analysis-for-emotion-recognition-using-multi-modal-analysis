@@ -30,7 +30,7 @@ def get_args():
     parser.add_argument('-aft', '--audio-feature-type', help='Hand crafted audio feature types', type=int, default=0)
 
     # Data
-    parser.add_argument('--num-emotions', help='Number of emotions in data', type=int, required=False, default=4)
+    parser.add_argument('--num-emotions', help='Number of emotions in data', type=int, required=False, default=6)
     parser.add_argument('--img-interval', help='Interval to sample image frames', type=int, required=False, default=500)
     parser.add_argument('--hand-crafted', help='Use hand crafted features', action='store_true')
     parser.add_argument('--text-max-len', help='Max length of text after tokenization', type=int, required=False, default=300)
