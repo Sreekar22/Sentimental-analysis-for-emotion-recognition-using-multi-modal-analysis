@@ -36,7 +36,7 @@ def get_args():
     parser.add_argument('--text-max-len', help='Max length of text after tokenization', type=int, required=False, default=300)
 
     # Path
-    parser.add_argument('--datapath', help='Path of data', type=str, required=False, default='./data')
+    parser.add_argument('--datapath', help='Path of data', type=str, required=False, default=''(output_path))
     parser.add_argument('--dataset', help='Use which dataset', type=str, required=False, default='iemocap')
 
     # Evaluation
